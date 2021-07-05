@@ -5,10 +5,11 @@ import com.example.patterns.service.reader_operation.FileType;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ExcelReader extends FileReader {
+public class ExcelReader implements FileReader {
 
-    public ExcelReader() {
-        super(FileType.EXCEL);
+    @Override
+    public FileType getSupportedFileType() {
+        return FileType.EXCEL;
     }
 
     @Override

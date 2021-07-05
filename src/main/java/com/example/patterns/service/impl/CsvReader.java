@@ -5,10 +5,11 @@ import com.example.patterns.service.reader_operation.FileType;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CsvReader extends FileReader {
+public class CsvReader implements FileReader {
 
-    public CsvReader(){
-        super(FileType.CSV);
+    @Override
+    public FileType getSupportedFileType() {
+        return FileType.CSV;
     }
 
     @Override
