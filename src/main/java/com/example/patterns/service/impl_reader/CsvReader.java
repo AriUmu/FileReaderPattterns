@@ -1,4 +1,4 @@
-package com.example.patterns.service.impl;
+package com.example.patterns.service.impl_reader;
 
 import com.example.patterns.service.FileReader;
 import com.example.patterns.service.reader_operation.FileType;

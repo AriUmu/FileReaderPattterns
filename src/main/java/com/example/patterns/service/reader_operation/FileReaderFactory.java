@@ -2,8 +2,8 @@ package com.example.patterns.service.reader_operation;
 
 import com.example.patterns.exceptions.UnsupportedFileTypeException;
 import com.example.patterns.service.FileReader;
-import com.example.patterns.service.impl.CsvReader;
-import com.example.patterns.service.impl.ExcelReader;
+import com.example.patterns.service.impl_reader.CsvReader;
+import com.example.patterns.service.impl_reader.ExcelReader;
 import lombok.Getter;
 import org.springframework.stereotype.Service;
 
